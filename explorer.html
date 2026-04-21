@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explorer - Sailor Piece Wiki</title>
+  <meta name="description" content="Recherche et exploration de la base de donnees Sailor Piece.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero hero-compact">
+      <div class="hero-orb hero-orb-left"></div>
+      <div class="hero-orb hero-orb-right"></div>
+      <div class="hero-gridlines"></div>
+      <nav class="topbar">
+        <a class="brand" href="index.html">Sailor Piece Wiki</a>
+        <div class="nav-links">
+          <a href="index.html">Accueil</a>
+          <a href="guides.html">Guides</a>
+          <a href="add-item.html">Ajouter</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section assistant-section" id="assistant">
+        <div class="section-heading">
+          <p class="section-kicker">Assistant wiki</p>
+          <h2>Chercher dans la base et obtenir une indication claire</h2>
+        </div>
+
+        <div class="assistant-grid">
+          <div class="assistant-box">
+            <label class="searchbox" for="assistant-search">
+              <span>Que veux-tu trouver ?</span>
+              <input id="assistant-search" type="search" placeholder="Ex: sailor island, light fruit, jinwoo, haki...">
+            </label>
+
+            <div class="helper-actions">
+              <button class="button button-primary helper-button" id="assistant-search-button" type="button">Chercher</button>
+              <button class="button button-secondary helper-button" id="assistant-reset-button" type="button">Reinitialiser</button>
+            </div>
+
+            <div class="quick-tags" aria-label="Recherches rapides">
+              <button type="button" class="quick-tag" data-query="Sailor Island">Sailor Island</button>
+              <button type="button" class="quick-tag" data-query="Light Fruit">Light Fruit</button>
+              <button type="button" class="quick-tag" data-query="Observation Haki">Observation Haki</button>
+              <button type="button" class="quick-tag" data-query="Jinwoo">Jinwoo</button>
+            </div>
+          </div>
+
+          <article class="assistant-result" id="assistant-result">
+            <p class="result-kicker">Resultat</p>
+            <h3 id="result-title">Tape un nom pour commencer</h3>
+            <p id="result-summary">Cherche un fruit, une ile, un boss ou une mecanique comme le Haki. Le site te donnera une fiche simple avec des conseils.</p>
+            <div class="result-meta">
+              <div class="meta-item">
+                <span class="meta-label">Type</span>
+                <strong id="result-type">-</strong>
+              </div>
+              <div class="meta-item">
+                <span class="meta-label">Niveau</span>
+                <strong id="result-level">-</strong>
+              </div>
+            </div>
+            <div class="result-details">
+              <div>
+                <span class="meta-label">Ou aller</span>
+                <p id="result-location">-</p>
+              </div>
+              <div>
+                <span class="meta-label">Quoi faire</span>
+                <p id="result-action">-</p>
+              </div>
+              <div>
+                <span class="meta-label">Conseil rapide</span>
+                <p id="result-tip">-</p>
+              </div>
+            </div>
+            <div class="result-suggestions">
+              <span class="meta-label">Suggestions proches</span>
+              <div id="result-suggestions-list" class="suggestions-list">
+                <span class="suggestion-chip">Aucune recherche lancee</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section explorer" id="explorer">
+        <div class="section-heading">
+          <p class="section-kicker">Base de donnees</p>
+          <h2>Explorer le wiki</h2>
+        </div>
+
+        <div class="toolbar">
+          <label class="searchbox" for="search">
+            <span>Recherche</span>
+            <input id="search" type="search" placeholder="Ex: fruit, ile, boss, haki...">
+          </label>
+          <div class="filter-group" aria-label="Filtres">
+            <button class="filter-button active" data-filter="all">Tout</button>
+            <button class="filter-button" data-filter="ile">Iles</button>
+            <button class="filter-button" data-filter="fruit">Fruits</button>
+            <button class="filter-button" data-filter="item">Objets</button>
+            <button class="filter-button" data-filter="race">Races</button>
+            <button class="filter-button" data-filter="boss">Boss</button>
+            <button class="filter-button" data-filter="system">Systemes</button>
+            <button class="filter-button" data-filter="arme">Armes</button>
+            <button class="filter-button" data-filter="mastery">Masteries</button>
+            <button class="filter-button" data-filter="titre">Titres</button>
+          </div>
+        </div>
+
+        <div class="wiki-grid" id="wiki-grid"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
