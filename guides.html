@@ -18,6 +18,45 @@
         <div class="nav-links">
           <a href="index.html">Accueil</a>
           <a href="explorer.html">Explorer</a>
+          <div class="nav-dropdown">
+            <a href="guides.html" class="nav-dropdown-trigger">Guides ▾</a>
+            <div class="nav-dropdown-menu nav-dropdown-grid">
+              <div class="nav-dropdown-col">
+                <span class="nav-dropdown-label">Personnages</span>
+                <a href="guide-races.html">Races</a>
+                <a href="guide-clans.html">Clans</a>
+                <a href="guide-traits.html">Traits</a>
+                <a href="guide-bloodlines.html">Bloodlines</a>
+                <a href="guide-pnj.html">PNJ</a>
+              </div>
+              <div class="nav-dropdown-col">
+                <span class="nav-dropdown-label">Ennemis</span>
+                <a href="guide-boss.html">Boss</a>
+                <a href="guide-mobs.html">Mobs</a>
+                <span class="nav-dropdown-label" style="margin-top:14px;">Équipement</span>
+                <a href="guide-armes.html">Armes</a>
+                <a href="guide-materiaux.html">Matériaux</a>
+                <a href="guide-artifacts.html">Artifacts</a>
+                <a href="guide-runes.html">Runes</a>
+              </div>
+              <div class="nav-dropdown-col">
+                <span class="nav-dropdown-label">Progression</span>
+                <a href="guide-ascension.html">Ascension</a>
+                <a href="guide-skilltree.html">Skill Tree</a>
+                <a href="guide-specpassive.html">Spec Passives</a>
+                <a href="guide-powers.html">Powers</a>
+                <a href="guide-guildes.html">Guildes</a>
+                <span class="nav-dropdown-label" style="margin-top:14px;">Activités</span>
+                <a href="guide-bossrush.html">Boss Rush</a>
+                <a href="guide-tower.html">Infinite Tower</a>
+              </div>
+              <div class="nav-dropdown-col">
+                <span class="nav-dropdown-label">Système</span>
+                <a href="guide-titres.html">Titres</a>
+                <a href="guide-quetes.html">Quêtes</a>
+              </div>
+            </div>
+          </div>
           <a href="add-item.html">Ajouter</a>
         </div>
       </nav>
@@ -30,174 +69,71 @@
           <h2>Tous les guides du jeu</h2>
         </div>
 
-        <div class="guides-grid">
-          <article class="guide-card">
-            <span>01</span>
-            <h3>Races</h3>
-            <p>Chances d'obtention, bonus et PNJ utiles pour chaque race.</p>
-            <p><a class="button button-secondary" href="#races-guide">Voir</a></p>
-          </article>
-          <article class="guide-card">
-            <span>02</span>
-            <h3>Clans</h3>
-            <p>Bonus, passifs et F moves utiles pour chaque clan.</p>
-            <p><a class="button button-secondary" href="#clans-guide">Voir</a></p>
-          </article>
-          <article class="guide-card">
-            <span>03</span>
-            <h3>Boss</h3>
-            <p>Emplacements, acces et loot de tous les boss documentes.</p>
-            <p><a class="button button-secondary" href="#bosses-guide">Voir</a></p>
-          </article>
-          <article class="guide-card">
-            <span>04</span>
-            <h3>Mobs</h3>
-            <p>Drops des ennemis de base par zone et ile.</p>
-            <p><a class="button button-secondary" href="#mobs-guide">Voir</a></p>
-          </article>
-          <article class="guide-card">
-            <span>05</span>
-            <h3>Titres</h3>
-            <p>Tous les titres avec taux de drop et pity confirmes.</p>
-            <p><a class="button button-secondary" href="#titles-guide">Voir</a></p>
-          </article>
-          <article class="guide-card">
-            <span>06</span>
-            <h3>Armes</h3>
-            <p>Armes et accessoires importants avec source et drop.</p>
-            <p><a class="button button-secondary" href="#weapons-guide">Voir</a></p>
-          </article>
-          <article class="guide-card">
-            <span>07</span>
-            <h3>Materiaux</h3>
-            <p>Composants de craft et materiaux de progression par route.</p>
-            <p><a class="button button-secondary" href="#mats-guide">Voir</a></p>
-          </article>
-          <article class="guide-card">
-            <span>08</span>
-            <h3>PNJ</h3>
-            <p>Tous les PNJ avec leur role, emplacement et lien vers leur quete.</p>
-            <p><a class="button button-secondary" href="#npc-guide">Voir</a></p>
-          </article>
-          <article class="guide-card">
-            <span>09</span>
-            <h3>Quetes</h3>
-            <p>Toutes les quetes avec conditions, objectifs et recompenses.</p>
-            <p><a class="button button-secondary" href="#quest-guide">Voir</a></p>
-          </article>
-        </div>
-      </section>
+        <div class="guides-categories">
 
-      <section class="section" id="races-guide">
-        <div class="section-heading">
-          <p class="section-kicker">Races</p>
-          <h2>Chances d'obtention et bonus</h2>
-        </div>
-        <p class="hero-text">
-          Les races se reroll avec un <code>Race Reroll</code>. Les pourcentages ci-dessous correspondent aux
-          chances d'obtention communautees les plus souvent rapporteess, avec les bonus principaux de chaque race.
-        </p>
-        <div class="race-guide-grid" id="race-guide-grid"></div>
-      </section>
+          <div class="guides-category-block">
+            <p class="guides-category-label">Personnages</p>
+            <div class="guides-grid">
+              <article class="guide-card"><span>01</span><h3>Races</h3><p>Chances d'obtention, bonus et PNJ utiles pour chaque race.</p><p><a class="button button-secondary" href="guide-races.html">Voir</a></p></article>
+              <article class="guide-card"><span>02</span><h3>Clans</h3><p>Bonus, passifs et F moves utiles pour chaque clan.</p><p><a class="button button-secondary" href="guide-clans.html">Voir</a></p></article>
+              <article class="guide-card"><span>03</span><h3>Traits</h3><p>Tous les traits avec stats, raretés et priorités de build.</p><p><a class="button button-secondary" href="guide-traits.html">Voir</a></p></article>
+              <article class="guide-card"><span>04</span><h3>Bloodlines</h3><p>Système Sea 2 — roller ses bloodlines avec des Bloodline Stones.</p><p><a class="button button-secondary" href="guide-bloodlines.html">Voir</a></p></article>
+              <article class="guide-card"><span>05</span><h3>PNJ</h3><p>Tous les PNJ avec rôle, emplacement et lien vers leur quête.</p><p><a class="button button-secondary" href="guide-pnj.html">Voir</a></p></article>
+            </div>
+          </div>
 
-      <section class="section" id="clans-guide">
-        <div class="section-heading">
-          <p class="section-kicker">Clans</p>
-          <h2>Bonus, passifs et PNJ utiles</h2>
-        </div>
-        <p class="hero-text">
-          Les clans se reroll avec un <code>Clan Reroll</code>. Les bonus et passifs ci-dessous sont verifies sur les wikis
-          communautaires. Les chances exactes par clan ne sont pas clairement confirmees publiquement, donc elles sont marquees comme non confirmees.
-        </p>
-        <div class="race-guide-grid" id="clan-guide-grid"></div>
-      </section>
+          <div class="guides-category-block">
+            <p class="guides-category-label">Ennemis</p>
+            <div class="guides-grid">
+              <article class="guide-card"><span>06</span><h3>Boss</h3><p>Emplacements, accès, conditions et loot de tous les boss.</p><p><a class="button button-secondary" href="guide-boss.html">Voir</a></p></article>
+              <article class="guide-card"><span>07</span><h3>Mobs</h3><p>Drops des ennemis de base par zone et île.</p><p><a class="button button-secondary" href="guide-mobs.html">Voir</a></p></article>
+            </div>
+          </div>
 
-      <section class="section" id="bosses-guide">
-        <div class="section-heading">
-          <p class="section-kicker">Bosses</p>
-          <h2>Emplacements, acces et loot</h2>
-        </div>
-        <p class="hero-text">
-          Cette section rassemble les boss documentes publiquement avec leur emplacement, leur condition d'acces
-          et leurs drops les plus importants. Quand un taux exact est connu, il est affiche. Sinon, c'est note comme non confirme.
-        </p>
-        <div class="boss-guide-grid" id="boss-guide-grid"></div>
-      </section>
+          <div class="guides-category-block">
+            <p class="guides-category-label">Équipement</p>
+            <div class="guides-grid">
+              <article class="guide-card"><span>08</span><h3>Armes</h3><p>Armes et accessoires importants avec source et taux de drop.</p><p><a class="button button-secondary" href="guide-armes.html">Voir</a></p></article>
+              <article class="guide-card"><span>09</span><h3>Matériaux</h3><p>Composants de craft et clés de progression par route.</p><p><a class="button button-secondary" href="guide-materiaux.html">Voir</a></p></article>
+              <article class="guide-card"><span>10</span><h3>Artifacts</h3><p>Sets, bonus 2/4 pièces et sous-stats optimales.</p><p><a class="button button-secondary" href="guide-artifacts.html">Voir</a></p></article>
+              <article class="guide-card"><span>11</span><h3>Runes</h3><p>11 runes (Rare → Secret) avec stats base/max et sources.</p><p><a class="button button-secondary" href="guide-runes.html">Voir</a></p></article>
+            </div>
+          </div>
 
-      <section class="section" id="titles-guide">
-        <div class="section-heading">
-          <p class="section-kicker">Titres</p>
-          <h2>Taux de drop et boss sources</h2>
-        </div>
-        <p class="hero-text">
-          Les titres s'obtiennent en droppant sur des boss specifiques. Le taux indique la chance par kill.
-          Quand un <code>pity</code> est confirme, il garantit le drop apres un certain nombre de kills sans succes.
-        </p>
-        <div class="race-guide-grid" id="title-guide-grid"></div>
-      </section>
+          <div class="guides-category-block">
+            <p class="guides-category-label">Progression</p>
+            <div class="guides-grid">
+              <article class="guide-card"><span>12</span><h3>Ascension</h3><p>5 paliers d'ascension avec niveaux, coûts et récompenses.</p><p><a class="button button-secondary" href="guide-ascension.html">Voir</a></p></article>
+              <article class="guide-card"><span>13</span><h3>Skill Tree</h3><p>Arbre de passifs débloqué à Slime Island (niveau 7000+).</p><p><a class="button button-secondary" href="guide-skilltree.html">Voir</a></p></article>
+              <article class="guide-card"><span>14</span><h3>Spec Passives</h3><p>Passifs spéciaux rollés via le Power Master.</p><p><a class="button button-secondary" href="guide-specpassive.html">Voir</a></p></article>
+              <article class="guide-card"><span>15</span><h3>Powers</h3><p>Système de Powers — Power Shards et Power Master (Sea 2).</p><p><a class="button button-secondary" href="guide-powers.html">Voir</a></p></article>
+              <article class="guide-card"><span>16</span><h3>Guildes</h3><p>Système de guildes Sea 2 — tâches et upgrades.</p><p><a class="button button-secondary" href="guide-guildes.html">Voir</a></p></article>
+            </div>
+          </div>
 
-      <section class="section" id="mobs-guide">
-        <div class="section-heading">
-          <p class="section-kicker">Mobs</p>
-          <h2>Drops des ennemis de base par zone</h2>
-        </div>
-        <p class="hero-text">
-          Cette section liste les drops des mobs normaux par ile. Les taux exacts ne sont pas tous confirmes publiquement,
-          les valeurs indiquees sont issues des wikis communautaires.
-        </p>
-        <div class="boss-guide-grid" id="mob-guide-grid"></div>
-      </section>
+          <div class="guides-category-block">
+            <p class="guides-category-label">Activités</p>
+            <div class="guides-grid">
+              <article class="guide-card"><span>17</span><h3>Boss Rush</h3><p>Rush Coins, modes de difficulté et améliorations permanentes.</p><p><a class="button button-secondary" href="guide-bossrush.html">Voir</a></p></article>
+              <article class="guide-card"><span>18</span><h3>Infinite Tower</h3><p>Tower Tokens, runes secrètes et armes endgame.</p><p><a class="button button-secondary" href="guide-tower.html">Voir</a></p></article>
+            </div>
+          </div>
 
-      <section class="section" id="weapons-guide">
-        <div class="section-heading">
-          <p class="section-kicker">Armes et accessoires</p>
-          <h2>Sources, drops et utilite</h2>
-        </div>
-        <p class="hero-text">
-          Les armes et accessoires importants du jeu avec leur source, leur taux de drop et leur utilite dans les routes de progression.
-        </p>
-        <div class="boss-guide-grid" id="weapon-guide-grid"></div>
-      </section>
+          <div class="guides-category-block">
+            <p class="guides-category-label">Système</p>
+            <div class="guides-grid">
+              <article class="guide-card"><span>19</span><h3>Titres</h3><p>Tous les titres avec boss source, taux de drop et pity.</p><p><a class="button button-secondary" href="guide-titres.html">Voir</a></p></article>
+              <article class="guide-card"><span>20</span><h3>Quêtes</h3><p>Toutes les quêtes avec conditions, objectifs et récompenses.</p><p><a class="button button-secondary" href="guide-quetes.html">Voir</a></p></article>
+            </div>
+          </div>
 
-      <section class="section" id="mats-guide">
-        <div class="section-heading">
-          <p class="section-kicker">Materiaux</p>
-          <h2>Composants de craft et progression</h2>
         </div>
-        <p class="hero-text">
-          Materiaux, composants et cles de craft importants pour avancer dans les routes de progression endgame.
-        </p>
-        <div class="boss-guide-grid" id="mat-guide-grid"></div>
-      </section>
-
-      <section class="section" id="npc-guide">
-        <div class="section-heading">
-          <p class="section-kicker">PNJ</p>
-          <h2>Personnages importants et leur role</h2>
-        </div>
-        <p class="hero-text">
-          Liste des PNJ importants du jeu avec leur emplacement, leur role et ce qu'ils permettent de faire ou d'obtenir.
-        </p>
-        <div class="race-guide-grid" id="npc-guide-grid"></div>
-      </section>
-
-      <section class="section" id="quest-guide">
-        <div class="section-heading">
-          <p class="section-kicker">Quetes</p>
-          <h2>Conditions, objectifs et recompenses</h2>
-        </div>
-        <p class="hero-text">
-          Les quetes principales te font progresser de niveau 0 a 12000+. Chaque quete est liee a un PNJ sur une ile specifique.
-          Les <strong>quetes speciales</strong> deblocables donnent acces a des iles, des armes uniques et des specialisations endgame.
-          Clique sur <em>Voir la quete associee</em> dans un PNJ pour retrouver directement sa quete ici.
-        </p>
-        <div class="boss-guide-grid" id="quest-guide-grid"></div>
       </section>
 
       <section class="section roadmap">
         <div class="section-heading">
-          <p class="section-kicker">Evolution du wiki</p>
-          <h2>Sections a completer ensuite</h2>
+          <p class="section-kicker">Évolution du wiki</p>
+          <h2>Sections a compléter ensuite</h2>
         </div>
         <div class="roadmap-list">
           <div class="roadmap-item">
@@ -206,7 +142,7 @@
           </div>
           <div class="roadmap-item">
             <h3>Pages detaillees</h3>
-            <p>Creer une fiche complete par fruit, boss, ile et systeme avec prix, prerequis et captures d'ecran.</p>
+            <p>Créer une fiche complete par fruit, boss, île et système avec prix, prerequis et captures d'ecran.</p>
           </div>
           <div class="roadmap-item">
             <h3>Codes et updates</h3>

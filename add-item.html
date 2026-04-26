@@ -18,7 +18,32 @@
         <div class="nav-links">
           <a href="index.html">Accueil</a>
           <a href="explorer.html">Explorer</a>
-          <a href="guides.html">Guides</a>
+          <div class="nav-dropdown">
+            <a href="guides.html" class="nav-dropdown-trigger">Guides ▾</a>
+            <div class="nav-dropdown-menu">
+              <a href="guide-races.html">Races</a>
+              <a href="guide-clans.html">Clans</a>
+              <a href="guide-boss.html">Boss</a>
+              <a href="guide-mobs.html">Mobs</a>
+              <a href="guide-titres.html">Titres</a>
+              <a href="guide-armes.html">Armes</a>
+              <a href="guide-materiaux.html">Matériaux</a>
+              <a href="guide-pnj.html">PNJ</a>
+              <a href="guide-quetes.html">Quêtes</a>
+              <a href="guide-runes.html">Runes</a>
+              <a href="guide-skilltree.html">Skill Tree</a>
+              <a href="guide-traits.html">Traits</a>
+              <a href="guide-artifacts.html">Artifacts</a>
+              <a href="guide-ascension.html">Ascension</a>
+              <a href="guide-bossrush.html">Boss Rush</a>
+              <a href="guide-tower.html">Infinite Tower</a>
+              <a href="guide-specpassive.html">Spec Passives</a>
+              <a href="guide-guildes.html">Guildes</a>
+              <a href="guide-powers.html">Powers</a>
+              <a href="guide-bloodlines.html">Bloodlines</a>
+            </div>
+          </div>
+          <a href="add-item.html">Ajouter</a>
         </div>
       </nav>
     </header>
@@ -39,12 +64,12 @@
           <label>
             <span>Type</span>
             <select id="item-type" name="type">
-              <option value="Ile">Ile</option>
+              <option value="Île">Île</option>
               <option value="Fruit" selected>Fruit</option>
               <option value="Objet">Objet</option>
               <option value="Race">Race</option>
               <option value="Boss">Boss</option>
-              <option value="Systeme">Systeme</option>
+              <option value="Système">Système</option>
               <option value="Arme">Arme</option>
               <option value="Mastery">Mastery</option>
               <option value="Titre">Titre</option>
@@ -54,7 +79,7 @@
           <label>
             <span>Categorie</span>
             <select id="item-category" name="category">
-              <option value="ile">ile</option>
+              <option value="île">île</option>
               <option value="fruit" selected>fruit</option>
               <option value="item">item</option>
               <option value="race">race</option>
@@ -78,7 +103,7 @@
 
           <label class="full">
             <span>Ou aller</span>
-            <textarea id="item-location" name="location" rows="3" placeholder="Ou trouver l'objet, l'ile ou le NPC." required></textarea>
+            <textarea id="item-location" name="location" rows="3" placeholder="Ou trouver l'objet, l'île ou le NPC." required></textarea>
           </label>
 
           <label class="full">

@@ -1,3 +1,110 @@
+/* ── DROPDOWN NAVIGATION ── */
+.topbar {
+  overflow: visible !important;
+  position: relative;
+  z-index: 100;
+}
+
+.hero, .hero-compact {
+  overflow: visible !important;
+}
+
+.nav-links {
+  position: relative;
+  z-index: 101;
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown-trigger {
+  color: var(--muted);
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  min-width: 580px;
+  padding: 16px 8px 12px;
+  border: 1px solid rgba(255, 201, 77, 0.25);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(17, 28, 46, 0.99), rgba(8, 16, 30, 0.99));
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(16px);
+  z-index: 9999;
+  flex-direction: row;
+  gap: 0;
+}
+
+.nav-dropdown-menu.is-open {
+  display: flex;
+}
+
+.nav-dropdown-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 0 10px;
+  border-right: 1px solid rgba(255,255,255,0.07);
+}
+
+.nav-dropdown-col:last-child {
+  border-right: none;
+}
+
+.nav-dropdown-label {
+  display: block;
+  padding: 4px 8px 8px;
+  color: var(--gold) !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: none !important;
+  cursor: default;
+  pointer-events: none;
+}
+
+.nav-dropdown-col a {
+  display: block;
+  padding: 7px 10px;
+  border-radius: 8px;
+  margin: 1px 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 140ms ease, color 140ms ease;
+}
+
+.nav-dropdown-col a:hover {
+  background: rgba(255, 201, 77, 0.1);
+  color: var(--gold);
+}
+
+@media (max-width: 720px) {
+  .nav-dropdown-menu {
+    flex-direction: column;
+    min-width: 200px;
+    right: 0;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  .nav-dropdown-col {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    padding-bottom: 8px;
+  }
+}
+
+/* ── DROPDOWN GRILLE ── */
 :root {
   --bg-deep: #08111f;
   --bg-mid: #132949;
@@ -863,5 +970,47 @@ a.loot-link:hover {
 
   h1 {
     font-size: 2.45rem;
+  }
+}
+
+/* ── GUIDES CATEGORIES PAGE ── */
+.guides-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.guides-category-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.guides-category-label {
+  color: var(--gold);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding-left: 4px;
+  border-left: 3px solid var(--gold);
+  padding-left: 10px;
+}
+
+@media (max-width: 720px) {
+  .nav-dropdown-menu.nav-dropdown-grid {
+    flex-direction: column;
+    min-width: 200px;
+    transform: translateX(-50%);
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  .nav-dropdown:hover .nav-dropdown-menu.nav-dropdown-grid {
+    transform: translateX(-50%) translateY(0);
+  }
+  .nav-dropdown-col {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    padding-bottom: 8px;
   }
 }

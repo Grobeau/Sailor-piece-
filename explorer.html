@@ -17,7 +17,46 @@
         <a class="brand" href="index.html">Sailor Piece Wiki</a>
         <div class="nav-links">
           <a href="index.html">Accueil</a>
-          <a href="guides.html">Guides</a>
+          <a href="explorer.html">Explorer</a>
+          <div class="nav-dropdown">
+            <a href="guides.html" class="nav-dropdown-trigger">Guides ▾</a>
+            <div class="nav-dropdown-menu nav-dropdown-grid">
+              <div class="nav-dropdown-col">
+                <span class="nav-dropdown-label">Personnages</span>
+                <a href="guide-races.html">Races</a>
+                <a href="guide-clans.html">Clans</a>
+                <a href="guide-traits.html">Traits</a>
+                <a href="guide-bloodlines.html">Bloodlines</a>
+                <a href="guide-pnj.html">PNJ</a>
+              </div>
+              <div class="nav-dropdown-col">
+                <span class="nav-dropdown-label">Ennemis</span>
+                <a href="guide-boss.html">Boss</a>
+                <a href="guide-mobs.html">Mobs</a>
+                <span class="nav-dropdown-label" style="margin-top:14px;">Équipement</span>
+                <a href="guide-armes.html">Armes</a>
+                <a href="guide-materiaux.html">Matériaux</a>
+                <a href="guide-artifacts.html">Artifacts</a>
+                <a href="guide-runes.html">Runes</a>
+              </div>
+              <div class="nav-dropdown-col">
+                <span class="nav-dropdown-label">Progression</span>
+                <a href="guide-ascension.html">Ascension</a>
+                <a href="guide-skilltree.html">Skill Tree</a>
+                <a href="guide-specpassive.html">Spec Passives</a>
+                <a href="guide-powers.html">Powers</a>
+                <a href="guide-guildes.html">Guildes</a>
+                <span class="nav-dropdown-label" style="margin-top:14px;">Activités</span>
+                <a href="guide-bossrush.html">Boss Rush</a>
+                <a href="guide-tower.html">Infinite Tower</a>
+              </div>
+              <div class="nav-dropdown-col">
+                <span class="nav-dropdown-label">Système</span>
+                <a href="guide-titres.html">Titres</a>
+                <a href="guide-quetes.html">Quêtes</a>
+              </div>
+            </div>
+          </div>
           <a href="add-item.html">Ajouter</a>
         </div>
       </nav>
@@ -39,7 +78,7 @@
 
             <div class="helper-actions">
               <button class="button button-primary helper-button" id="assistant-search-button" type="button">Chercher</button>
-              <button class="button button-secondary helper-button" id="assistant-reset-button" type="button">Reinitialiser</button>
+              <button class="button button-secondary helper-button" id="assistant-reset-button" type="button">Réinitialiser</button>
             </div>
 
             <div class="quick-tags" aria-label="Recherches rapides">
@@ -51,9 +90,9 @@
           </div>
 
           <article class="assistant-result" id="assistant-result">
-            <p class="result-kicker">Resultat</p>
+            <p class="result-kicker">Résultat</p>
             <h3 id="result-title">Tape un nom pour commencer</h3>
-            <p id="result-summary">Cherche un fruit, une ile, un boss ou une mecanique comme le Haki. Le site te donnera une fiche simple avec des conseils.</p>
+            <p id="result-summary">Cherche un fruit, une île, un boss ou une mecanique comme le Haki. Le site te donnera une fiche simple avec des conseils.</p>
             <div class="result-meta">
               <div class="meta-item">
                 <span class="meta-label">Type</span>
@@ -97,11 +136,11 @@
         <div class="toolbar">
           <label class="searchbox" for="search">
             <span>Recherche</span>
-            <input id="search" type="search" placeholder="Ex: fruit, ile, boss, haki...">
+            <input id="search" type="search" placeholder="Ex: fruit, île, boss, haki...">
           </label>
           <div class="filter-group" aria-label="Filtres">
             <button class="filter-button active" data-filter="all">Tout</button>
-            <button class="filter-button" data-filter="ile">Iles</button>
+            <button class="filter-button" data-filter="île">Îles</button>
             <button class="filter-button" data-filter="fruit">Fruits</button>
             <button class="filter-button" data-filter="item">Objets</button>
             <button class="filter-button" data-filter="race">Races</button>
